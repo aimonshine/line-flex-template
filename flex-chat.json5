@@ -1,7 +1,7 @@
 ﻿{
   altText: "房價還能撐多久？",
   prompt: "房價還能撐多久？",
-  answer: 114/9/4 台北市士林社大\n讓你18週,成為下一個買賣高手!\n講師|彭彥祥 🔍\n・20+年都市更新 危老操盤顧問\n・逾百場地主說明會主講人\n・實戰財務模型×真實案例分享,
+  answer: "114/9/4 台北市士林社大\n讓你18週,成為下一個買賣高手!\n講師|彭彥祥 🔍\n・20+年都市更新 危老操盤顧問\n・逾百場地主說明會主講人\n・實戰財務模型×真實案例分享",
   avatar: "https://icon-library.com/images/member-icon/member-icon-7.jpg",
   design: "gpt4",
   link: "https://tscc3.org/tscc/latestclass/",
