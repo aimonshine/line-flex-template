@@ -9,9 +9,7 @@ function truncate(str) {
 function gaScreenView(vcard) {
   const TEMPLATE_NAME = 'ChatGPT-2025/register'
   let hash = CryptoJS.HmacMD5(JSON.stringify(vcard), TEMPLATE_NAME)
-  hash = CryptoJS.enc.Base64.stringify(hash).replace(/[+/=]/g, c => _.get({ '+': '-', '/': '_', '=': '' 
-
-}, c))
+  hash = CryptoJS.enc.Base64.stringify(hash).replace(/[+/=]/g, c => _.get({ '+': '-', '/': '_', '=': '' }, c))
   return gtag.mpCollectUrl({
     client_id: gtagClientId,
     events: [{
@@ -46,11 +44,15 @@ function escapeStr(str) {
 
 
         {
-          "backgroundColor": "#444444",
+          "backgroundColor": "#393694",
           "layout": "horizontal",
           "paddingAll": "16px",
           "type": "box",
-
+          "action": {
+            "label": "action",
+            "type": "uri",
+            "uri": "${liffLink}"
+          },
           "contents": [
             {
               "cornerRadius": "2px",
@@ -74,18 +76,20 @@ function escapeStr(str) {
               "type": "box",
               "contents": [
                 {
-                  "color": "#000000",
+                  "color": "#ffffff",
                   "lineSpacing": "6px",
                   "size": "16px",
                   "text": "${escapeStr(vcard.prompt0)}",
                   "type": "text",
                   "wrap": true
                 },
-
               ]
             }
           ]
         },
+
+
+
         {
           "backgroundColor": "#343541",
           "layout": "horizontal",
@@ -185,9 +189,7 @@ function escapeStr(str) {
                   "aspectRatio": "1:1",
                   "size": "full",
                   "type": "image",
-                  "url": "https://i.imgur.com/${(DESIGNS[vcard.design] ?? 
-
-DESIGNS.default).imgur}.png"
+                  "url": "https://i.imgur.com/${(DESIGNS[vcard.design] ?? DESIGNS.default).imgur}.png"
                 }
               ]
             },
@@ -339,9 +341,7 @@ DESIGNS.default).imgur}.png"
                   "aspectRatio": "1:1",
                   "size": "full",
                   "type": "image",
-                  "url": "https://i.imgur.com/${(DESIGNS[vcard.design] ?? 
-
-DESIGNS.default).imgur}.png"
+                  "url": "https://i.imgur.com/${(DESIGNS[vcard.design] ?? DESIGNS.default).imgur}.png"
                 }
               ]
             },
