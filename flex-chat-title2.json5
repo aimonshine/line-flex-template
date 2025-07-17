@@ -1,17 +1,9 @@
-﻿{
-  altText: "房價還能撐多久？",
-  prompt: "增值潛力評估公式：快速篩選會漲區位\n買賣攻防實務：議價、稅務一次搞懂\n﻿﻿都更/危老投資地圖：政策紅利、時程節點\n老屋資產活化策略：翻新、自住、出租、出售全攻略",
-  answer: "搜尋🔍彭彥祥\n班別/編號皆填「C07」",
-  avatar: "https://icon-library.com/images/member-icon/member-icon-7.jpg",
-  design: "gpt4",
-  link: "https://tscc3.org/tscc/latestclass/",
-
-
-
-
-  registerForm: {
-    text: "﻿不動產買賣與投資實戰班",
-
-  },
-
+{
+  "altText": "不動產買賣與投資實戰班\n\n增值潛力評估公式：快速篩選會漲區位\n買賣攻防實務：議價、稅務一次搞懂\n都更/危老投資地圖：政策紅利、時程節點\n老屋資產活化策略：翻新、自住、出租、出售全攻略",
+  "answer": "搜尋🔍彭彥祥\n班別/編號皆填「C07」",
+  "avatar": "https://tscc2.org/wp-content/uploads/2024/05/slsd-icon.png",
+  "design": "gpt4",
+  "link": "https://tscc3.org/tscc/latestclass/",
+  "prompt": "不動產買賣與投資實戰班\n\n增值潛力評估公式：快速篩選會漲區位\n買賣攻防實務：議價、稅務一次搞懂\n都更/危老投資地圖：政策紅利、時程節點\n老屋資產活化策略：翻新、自住、出租、出售全攻略",
+  "template": "https://raw.githubusercontent.com/aimonshine/line-flex-template/main/flex-chat-title2.txt"
 }
