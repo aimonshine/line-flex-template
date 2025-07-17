@@ -41,22 +41,127 @@ function escapeStr(str) {
       "paddingAll": "0px",
       "type": "box",
       "contents": [
-
         {
-          "backgroundColor": "#8fc017",
+          "backgroundColor": "#343541",
           "layout": "vertical",
           "paddingAll": "16px",
           "type": "box",
           "contents": [
             {
               "type": "text",
-              "text": "﻿不動產買賣與投資實戰班",
-              "color": "#000000",
+              "text": "報名表",
+              "color": "#00c3ff",
               "size": "16px",
               "weight": "bold",
-
+              "action": {
+                "type": "uri",
+                "label": "報名表",
+                "uri": "${vcard.registerForm?.uri}"
+              }
             },
-
+            {
+              "type": "text",
+              "text": "${vcard.classCode}",
+              "color": "#ffffff",
+              "size": "14px",
+              "margin": "8px"
+            }
+          ]
+        },
+        {
+          "height": "1px",
+          "layout": "vertical",
+          "offsetStart": "0px",
+          "offsetTop": "0px",
+          "position": "absolute",
+          "type": "box",
+          "width": "1px",
+          "contents": [
+            {
+              "align": "center",
+              "aspectMode": "cover",
+              "aspectRatio": "1:1",
+              "gravity": "center",
+              "size": "full",
+              "type": "image",
+              "url": "${gaScreenView(vcard)}"
+            }
+          ]
+        },
+        {
+          "backgroundColor": "#444654",
+          "layout": "horizontal",
+          "paddingAll": "16px",
+          "type": "box",
+          "action": {
+            "label": "action",
+            "type": "uri",
+            "uri": "${_.trim(vcard.link)}"
+          },
+          "contents": [
+            {
+              "cornerRadius": "2px",
+              "height": "30px",
+              "layout": "vertical",
+              "type": "box",
+              "width": "30px",
+              "contents": [
+                {
+                  "aspectMode": "cover",
+                  "aspectRatio": "1:1",
+                  "size": "full",
+                  "type": "image",
+                  "url": "https://i.imgur.com/${(DESIGNS[vcard.design] ?? DESIGNS.default).imgur}.png"
+                }
+              ]
+            },
+            {
+              "layout": "vertical",
+              "margin": "24px",
+              "type": "box",
+              "contents": [
+                {
+                  "color": "#ffffff",
+                  "lineSpacing": "6px",
+                  "size": "16px",
+                  "text": "${escapeStr(vcard.answer)}",
+                  "type": "text",
+                  "wrap": true
+                },
+                {
+                  "alignItems": "center",
+                  "justifyContent": "flex-end",
+                  "layout": "horizontal",
+                  "margin": "16px",
+                  "type": "box",
+                  "contents": [
+                    {
+                      "height": "16px",
+                      "layout": "vertical",
+                      "type": "box",
+                      "width": "16px",
+                      "contents": [
+                        {
+                          "aspectMode": "cover",
+                          "aspectRatio": "1:1",
+                          "size": "full",
+                          "type": "image",
+                          "url": "https://i.imgur.com/TKLR5OZ.png"
+                        }
+                      ]
+                    },
+                    {
+                      "color": "#acacbe",
+                      "flex": 0,
+                      "margin": "6px",
+                      "size": "14px",
+                      "text": "開啟",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
 
@@ -118,105 +223,6 @@ function escapeStr(str) {
                           "aspectRatio": "1:1",
                           "size": "full",
                           "type": "image",
-                          "url": "https://i.imgur.com/TKLR5OZ.png"
-                        }
-                      ]
-                    },
-                    {
-                      "color": "#acacbe",
-                      "flex": 0,
-                      "margin": "6px",
-                      "size": "14px",
-                      "text": "開啟",
-                      "type": "text"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-
-        {
-          "height": "1px",
-          "layout": "vertical",
-          "offsetStart": "0px",
-          "offsetTop": "0px",
-          "position": "absolute",
-          "type": "box",
-          "width": "1px",
-          "contents": [
-            {
-              "align": "center",
-              "aspectMode": "cover",
-              "aspectRatio": "1:1",
-              "gravity": "center",
-              "size": "full",
-              "type": "image",
-              "url": "${gaScreenView(vcard)}"
-            }
-          ]
-        },
-
-
-        {
-          "backgroundColor": "#444654",
-          "layout": "horizontal",
-          "paddingAll": "16px",
-          "type": "box",
-          "action": {
-            "label": "action",
-            "type": "uri",
-            "uri": "${_.trim(vcard.link)}"
-          },
-          "contents": [
-            {
-              "cornerRadius": "2px",
-              "height": "30px",
-              "layout": "vertical",
-              "type": "box",
-              "width": "30px",
-              "contents": [
-                {
-                  "aspectMode": "cover",
-                  "aspectRatio": "1:1",
-                  "size": "full",
-                  "type": "image",
-                  "url": "https://i.imgur.com/${(DESIGNS[vcard.design] ?? DESIGNS.default).imgur}.png"
-                }
-              ]
-            },
-            {
-              "layout": "vertical",
-              "margin": "24px",
-              "type": "box",
-              "contents": [
-                {
-                  "color": "#ffffff",
-                  "lineSpacing": "6px",
-                  "size": "16px",
-                  "text": "${escapeStr(vcard.answer)}",
-                  "type": "text",
-                  "wrap": true
-                },
-                {
-                  "alignItems": "center",
-                  "justifyContent": "flex-end",
-                  "layout": "horizontal",
-                  "margin": "16px",
-                  "type": "box",
-                  "contents": [
-                    {
-                      "height": "16px",
-                      "layout": "vertical",
-                      "type": "box",
-                      "width": "16px",
-                      "contents": [
-                        {
-                          "aspectMode": "cover",
-                          "aspectRatio": "1:1",
-                          "size": "full",
-                          "type": "image",
                           "url": "https://i.imgur.com/cpgkZST.png"
                         }
                       ]
@@ -235,7 +241,6 @@ function escapeStr(str) {
             }
           ]
         }
-
 
       ]
     }
