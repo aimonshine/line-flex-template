@@ -1,13 +1,13 @@
-﻿<%
+<%
 const DESIGNS = {
   gpt4: { imgur: 'TfKtcc7' },
   default: { imgur: '7u8NHYz' },
 }
-function truncate(str) {
+function truncate (str) {
   return _.truncate(str, { length: 20, omission: '' })
 }
-function gaScreenView(vcard) {
-  const TEMPLATE_NAME = 'ChatGPT-2025/register'
+function gaScreenView (vcard) {
+  const TEMPLATE_NAME = 'ChatGPT-2023/04/18'
   let hash = CryptoJS.HmacMD5(JSON.stringify(vcard), TEMPLATE_NAME)
   hash = CryptoJS.enc.Base64.stringify(hash).replace(/[+/=]/g, c => _.get({ '+': '-', '/': '_', '=': '' }, c))
   return gtag.mpCollectUrl({
@@ -24,7 +24,7 @@ function gaScreenView(vcard) {
     }],
   })
 }
-function escapeStr(str) {
+function escapeStr (str) {
   if (!_.isString(str)) return str
   return JSON.stringify(str).slice(1, -1)
 }
@@ -41,53 +41,7 @@ function escapeStr(str) {
       "paddingAll": "0px",
       "type": "box",
       "contents": [
-        {
-          "backgroundColor": "#343541",
-          "layout": "vertical",
-          "paddingAll": "16px",
-          "type": "box",
-          "contents": [
-            {
-              "type": "text",
-              "text": "報名表",
-              "color": "#00c3ff",
-              "size": "16px",
-              "weight": "bold",
-              "action": {
-                "type": "uri",
-                "label": "報名表",
-                "uri": "${vcard.registerForm?.uri}"
-              }
-            },
-            {
-              "type": "text",
-              "text": "${vcard.classCode}",
-              "color": "#ffffff",
-              "size": "14px",
-              "margin": "8px"
-            }
-          ]
-        },
-        {
-          "height": "1px",
-          "layout": "vertical",
-          "offsetStart": "0px",
-          "offsetTop": "0px",
-          "position": "absolute",
-          "type": "box",
-          "width": "1px",
-          "contents": [
-            {
-              "align": "center",
-              "aspectMode": "cover",
-              "aspectRatio": "1:1",
-              "gravity": "center",
-              "size": "full",
-              "type": "image",
-              "url": "${gaScreenView(vcard)}"
-            }
-          ]
-        },
+
         {
           "backgroundColor": "#444654",
           "layout": "horizontal",
@@ -164,7 +118,26 @@ function escapeStr(str) {
             }
           ]
         },
-
+        {
+          "height": "1px",
+          "layout": "vertical",
+          "offsetStart": "0px",
+          "offsetTop": "0px",
+          "position": "absolute",
+          "type": "box",
+          "width": "1px",
+          "contents": [
+            {
+              "align": "center",
+              "aspectMode": "cover",
+              "aspectRatio": "1:1",
+              "gravity": "center",
+              "size": "full",
+              "type": "image",
+              "url": "${gaScreenView(vcard)}"
+            }
+          ]
+        },
         {
           "backgroundColor": "#343541",
           "layout": "horizontal",
@@ -241,7 +214,6 @@ function escapeStr(str) {
             }
           ]
         }
-
       ]
     }
   }
