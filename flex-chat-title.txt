@@ -1,4 +1,4 @@
-﻿<%
+<%
 const DESIGNS = {
   gpt4: { imgur: 'TfKtcc7' },
   default: { imgur: '7u8NHYz' },
@@ -9,7 +9,9 @@ function truncate(str) {
 function gaScreenView(vcard) {
   const TEMPLATE_NAME = 'ChatGPT-2025/register'
   let hash = CryptoJS.HmacMD5(JSON.stringify(vcard), TEMPLATE_NAME)
-  hash = CryptoJS.enc.Base64.stringify(hash).replace(/[+/=]/g, c => _.get({ '+': '-', '/': '_', '=': '' }, c))
+  hash = CryptoJS.enc.Base64.stringify(hash).replace(/[+/=]/g, c => _.get({ '+': '-', '/': '_', '=': '' 
+
+}, c))
   return gtag.mpCollectUrl({
     client_id: gtagClientId,
     events: [{
@@ -44,7 +46,7 @@ function escapeStr(str) {
 
 
         {
-          "backgroundColor": "#94bf84",
+          "backgroundColor": "#444444",
           "layout": "horizontal",
           "paddingAll": "16px",
           "type": "box",
@@ -79,31 +81,7 @@ function escapeStr(str) {
                   "type": "text",
                   "wrap": true
                 },
-                {
-                  "alignItems": "center",
-                  "justifyContent": "flex-end",
-                  "layout": "horizontal",
-                  "margin": "16px",
-                  "type": "box",
-                  "contents": [
-                    {
-                      "height": "16px",
-                      "layout": "vertical",
-                      "type": "box",
-                      "width": "16px",
-                      "contents": [
-                        {
-                          "aspectMode": "cover",
-                          "aspectRatio": "1:1",
-                          "size": "full",
-                          "type": "image",
-                          "url": "https://tscc2.org/wp-content/uploads/2024/05/slsd-icon.png"
-                        }
-                      ]
-                    },
 
-                  ]
-                }
               ]
             }
           ]
@@ -207,7 +185,9 @@ function escapeStr(str) {
                   "aspectRatio": "1:1",
                   "size": "full",
                   "type": "image",
-                  "url": "https://i.imgur.com/${(DESIGNS[vcard.design] ?? DESIGNS.default).imgur}.png"
+                  "url": "https://i.imgur.com/${(DESIGNS[vcard.design] ?? 
+
+DESIGNS.default).imgur}.png"
                 }
               ]
             },
@@ -359,7 +339,9 @@ function escapeStr(str) {
                   "aspectRatio": "1:1",
                   "size": "full",
                   "type": "image",
-                  "url": "https://i.imgur.com/${(DESIGNS[vcard.design] ?? DESIGNS.default).imgur}.png"
+                  "url": "https://i.imgur.com/${(DESIGNS[vcard.design] ?? 
+
+DESIGNS.default).imgur}.png"
                 }
               ]
             },
