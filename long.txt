@@ -6,6 +6,7 @@
     "descSize": "xs",
     "ratio": "1280:2491",
     "titleSize": "xl",
+    "size":"full",
 
     "action":{ 
        "label":"action",
@@ -13,13 +14,7 @@
        "uri":"${liffLink}" 
     },
 
-              "contents":{ 
-                  "aspectMode":"cover",
-                  "aspectRatio":"1:1",
-                  "size":"full",
-                  "type":"btns",
-                  "url":"${vcard.avatar}" 
-              },
+
     "cards": [
       {
         "bgColor": "#ffffff",
@@ -38,7 +33,7 @@
           },
           {
             "color": "#17434e",
-            "link": "${_.trim(vcard.link)}",
+            "link": "${_.trim(liffLink)}",
             "style": "primary",
             "text": "分享"
           }
