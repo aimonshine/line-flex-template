@@ -15,9 +15,7 @@
           “contents”：[ 
             { 
               “cornerRadius”：“2px”，
-              “height”：“30px 
-              ”，
-              ”layout.” 
+              “height”：“30px”，
               “width”： “30px”，
               “contents”：[ 
                 { 
