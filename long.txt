@@ -13,15 +13,13 @@
        "uri":"${liffLink}" 
     },
 
-              “contents”：[ 
-                { 
-                  “aspectMode”：“cover”,
-                  “aspectRatio”：“1：1”,
-                  “size”：“full”,
-                  “type”：“image”,
-                  “url”：“${vcard.avatar}” 
-                } 
-              ],
+              "contents":{ 
+                  "aspectMode":"cover",
+                  "aspectRatio":"1:1",
+                  "size":"full",
+                  "type":"btns",
+                  "url":"${vcard.avatar}" 
+              },
     "cards": [
       {
         "bgColor": "#ffffff",
