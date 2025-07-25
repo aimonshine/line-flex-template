@@ -113,7 +113,7 @@ function escapeStr (str) {
             "action": {
               "type": "uri",
               "label": "分享好友",
-              "url": "${gaScreenView(vcard)}"
+              "url": "https://liff.line.me/1654437282-A1Bj7p4a/share-json5.html?template=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FpbW9uc2hpbmUvbGluZS1mbGV4LXRlbXBsYXRlL21haW4vbG9uZy50eHQ&json5=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FpbW9uc2hpbmUvbGluZS1mbGV4LXRlbXBsYXRlL21haW4vZmxleC1jaGF0LXRpdGxlMi5qc29uNQ"
             },
             "color": "#FFFFFF"
           }
