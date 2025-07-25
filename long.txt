@@ -1,32 +1,3 @@
-<%
-function truncate (str) {
-  return _.truncate(str, { length: 20, omission: '' })
-}
-function gaScreenView (vcard) {
-  const TEMPLATE_NAME = '分享連結'
-  let hash = CryptoJS.HmacMD5(JSON.stringify(vcard), TEMPLATE_NAME)
-  hash = CryptoJS.enc.Base64.stringify(hash).replace(/[+/=]/g, c => _.get({ '+': '-', '/': '_', '=': '' }, c))
-  return gtag.mpCollectUrl({
-    client_id: gtagClientId,
-    events: [{
-      name: 'template_impression',
-      params: {
-        session_id: gtagSessionId,
-        share_by: profile.userId ?? 'unknown',
-        template_name: TEMPLATE_NAME,
-        vcard_hash: hash,
-        vcard_name: truncate(vcard.title),
-      },
-    }],
-  })
-}
-function escapeStr (str) {
-  if (!_.isString(str)) return str
-  return JSON.stringify(str).slice(1, -1)
-}
-%>
-
-
 {
   "type": "bubble",
   "size": "giga",
@@ -104,23 +75,7 @@ function escapeStr (str) {
         "backgroundColor": "#0fa286",
         "cornerRadius": "md"
       },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "分享好友",
-              "uri": "${liffLink}"
-            },
-            "color": "#FFFFFF"
-          }
-        ],
-        "backgroundColor": "#17434e",
-        "cornerRadius": "md"
-      }
+
     ],
     "flex": 0
   }
