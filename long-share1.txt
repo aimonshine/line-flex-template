@@ -1,0 +1,98 @@
+{
+  "type": "bubble",
+  "size": "giga",
+  "hero": {
+    "type": "image",
+    "size": "full",
+    "aspectRatio": "1280:2491",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "https://sites.google.com/view/lipartw/"
+    },
+    "url": "https://media.discordapp.net/attachments/637600656831807488/1397964640008540320/IMG_1333.jpg?ex=6883a387&is=68825207&hm=7f547dbc3455820bec32545d80ee965a9da4707f9d74811abe11e203bab3dbea&"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "不動產買賣與投資實戰班",
+        "weight": "bold",
+        "size": "xl",
+        "align": "center"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "lg",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "房市震盪期，學會精準出手\n——\n《不動產買賣與投資實戰班》正式招生\n\n平均地權條例修法、第七波信用管制接連上路，市場充滿問號：\n• 房價還能撐多久？\n• 修正行情何時出現？\n• 危老／都更怎麼選才賺得到？\n• 手上的老屋要怎樣變「會下金蛋的資產」？\n\n如果這些也是你每天在思考的問題，本課程將給你拆解市場的系統工具，讓你在高變動時代，依舊看得懂風向、抓得住機會。\n\n——\n\n為什麼選擇彭彥祥老師？\n• 都市更新・危老重建顧問——20+ 年實務操盤經驗\n• 百場地主說明會主講人——洞悉地主與投資人真正痛點\n• 投資與教學並進，課堂直擊財務模型 × 實戰案例，不是紙上談兵\n\n——\n\n你將帶走\n1. 增值潛力評估公式：快速篩選會漲的區位與產品\n2. 買賣攻防實務：從議價到稅務，一次搞懂買進／賣出流程\n3. 都更・危老投資地圖：捕捉政策紅利與時程節點\n4. 老屋資產活化策略：翻新、自住、出租、出售的最佳解\n\n加值選項：凡報名學員可 優惠價 NT$500 購得\n《不動產投資工具書》（原價 NT$1,200，限課程現場領取）\n\n——\n名額有限，立即鎖定座位\n1. 班別與報名編號皆填寫「C07」\n2. 完成線上繳費即保留席位\n\n課程資訊\n時間：114 年 9 月 4 日起，每週四 19:00–21:30（共 18 週）\n地點：台北市士林社大（不限區域，外縣市可安心參與）搭捷運可快速抵達\n學費　限時優惠 NT$3,000\n\n抓準房市變局的關鍵 18 週，讓自己成為下一個買賣高手。\n現在就報名，9 月 4 日教室見！🏁",
+                "wrap": true,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "action": {
+      "type": "uri",
+      "label": "action",
+      "uri": "https://sites.google.com/view/lipartw/online?authuser=0"
+    }
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "立即報名",
+              "uri": "https://cicdorg.app.link/?event=90"
+            },
+            "color": "#FFFFFF"
+          }
+        ],
+        "backgroundColor": "#0fa286",
+        "cornerRadius": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "分享好友",
+              "uri": "https://liff.line.me/1654437282-A1Bj7p4a/share-json5.html?template=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FpbW9uc2hpbmUvbGluZS1mbGV4LXRlbXBsYXRlL21haW4vbG9uZy50eHQ&json5=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FpbW9uc2hpbmUvbGluZS1mbGV4LXRlbXBsYXRlL21haW4vZmxleC1jaGF0LXRpdGxlMi5qc29uNQ"
+            },
+            "color": "#FFFFFF"
+          }
+        ],
+        "backgroundColor": "#17434e",
+        "cornerRadius": "md"
+      }
+    ],
+    "flex": 0
+  }
+}
