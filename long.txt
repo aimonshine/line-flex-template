@@ -3,7 +3,7 @@ function truncate (str) {
   return _.truncate(str, { length: 20, omission: '' })
 }
 function gaScreenView (vcard) {
-  const TEMPLATE_NAME = 'Facebook分享連結-2020/09/18'
+  const TEMPLATE_NAME = '分享連結'
   let hash = CryptoJS.HmacMD5(JSON.stringify(vcard), TEMPLATE_NAME)
   hash = CryptoJS.enc.Base64.stringify(hash).replace(/[+/=]/g, c => _.get({ '+': '-', '/': '_', '=': '' }, c))
   return gtag.mpCollectUrl({
@@ -113,7 +113,7 @@ function escapeStr (str) {
             "action": {
               "type": "uri",
               "label": "分享好友",
-              "url": "https://liff.line.me/1654437282-A1Bj7p4a/share-json5.html?template=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FpbW9uc2hpbmUvbGluZS1mbGV4LXRlbXBsYXRlL21haW4vbG9uZy50eHQ&json5=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FpbW9uc2hpbmUvbGluZS1mbGV4LXRlbXBsYXRlL21haW4vZmxleC1jaGF0LXRpdGxlMi5qc29uNQ"
+              "uri": "${liffLink}"
             },
             "color": "#FFFFFF"
           }
