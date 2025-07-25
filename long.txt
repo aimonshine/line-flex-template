@@ -113,7 +113,7 @@ function escapeStr (str) {
             "action": {
               "type": "uri",
               "label": "分享好友",
-              "uri": "${_.trim(vcard.link)}"
+              "uri": "${liffLink}"
             },
             "color": "#FFFFFF"
           }
